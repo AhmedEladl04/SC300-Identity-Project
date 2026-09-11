@@ -41,10 +41,11 @@ B) reset a password with alice
 c) Can Alice assign herself Global Administrator 
 failed
 
-| Test | Expected	|
-| View users	| Allowed	|
-| Create user	| Allowed	|
-| Modify user	| Allowed |
-| Reset normal user's password	| Allowed |	
-| Assign Global Administrator |	Denied	|
-| Modify tenant-wide privileged configuration	| Denied/limited |
+| Test | Expected |
+|------|----------|
+| View users | Allowed |
+| Create user | Allowed |
+| Modify user | Allowed |
+| Reset normal user's password | Allowed |
+| Assign Global Administrator | Denied |
+| Modify tenant-wide privileged configuration | Denied/limited |
