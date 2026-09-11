@@ -153,4 +153,30 @@ Microsoft Entra ID Tenant
 ```
 
 
+Now for delegation:
+Set Alice role to be scoped to AU not whole directory
+
+```
+You
+Global Administrator
+│
+└── Entire tenant
+
+
+Alice Admin
+User Administrator
+│
+├── AU-IT
+│   ├── Mohamed IT
+│   └── David IT
+│
+├── AU-Security-Operations
+│   ├── John SOC
+│   ├── Sarah SOC
+│   └── Omar SOC
+│
+└── AU-HR
+    └── Lisa HR
+```
+<img width="1612" height="691" alt="image" src="https://github.com/user-attachments/assets/fa58bd47-76a8-4d4e-849e-c1ee23a16721" />
 
