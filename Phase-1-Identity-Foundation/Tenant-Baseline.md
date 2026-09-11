@@ -1,13 +1,12 @@
 | Property | Value |
 |---|---|
-| Tenant Name : eladlsecurityaudit 
-| Primary Domain : eladlaudit.onmicrosoft.com 
-| Microsoft Entra License : Microsoft Entra ID P2 
-| Users : 1 
-| Groups : 0 
-| Applications : 0 
-| Devices : 0
-
+| Tenant Name | eladlsecurityaudit |
+| Primary Domain | eladlaudit.onmicrosoft.com |
+| Microsoft Entra License | Microsoft Entra ID P2 |
+| Users | 1 |
+| Groups | 0 |
+| Applications | 0 |
+| Devices | 0 |
 the tenant is currently in an almost clean state, with only the initial administrator account present.
 
 There are currently:
