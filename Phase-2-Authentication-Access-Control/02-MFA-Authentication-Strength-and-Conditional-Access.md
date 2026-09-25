@@ -1,4 +1,4 @@
-# 02 - MFA and Authentication Strength
+# 02 - MFA Authentication Strength and Conditional Access
 
 ## Objective
 Configure and enforce Multi-Factor Authentication (MFA) using Microsoft Entra Conditional Access.
