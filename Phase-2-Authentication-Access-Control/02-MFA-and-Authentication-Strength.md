@@ -46,6 +46,9 @@ Passwordless and phishing-resistant methods were reviewed but not implemented in
 <img width="537" height="622" alt="Screenshot 2026-09-24 235537" src="https://github.com/user-attachments/assets/b37c752f-c293-4c4a-ace5-43783058a91c" />
 
 12. Verified the sign-in and Conditional Access result in the Entra sign-in logs.
+<img width="847" height="407" alt="Screenshot 2026-09-25 165439" src="https://github.com/user-attachments/assets/bc8f34a2-2975-443e-8c82-2c6655644f68" />
+<img width="805" height="355" alt="Screenshot 2026-09-25 171051" src="https://github.com/user-attachments/assets/8cb5e2cd-54ce-43ee-86bf-8fc16053a2cc" />
+
 
 ### Result
 ✅ MFA successfully enforced through Conditional Access.
