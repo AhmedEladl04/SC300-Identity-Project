@@ -18,7 +18,8 @@ Register an application in Microsoft Entra ID, configure a client secret and a M
 2. Registered `LAB-App-Reporting` as a single-tenant application.
 3. Recorded the Application (client) ID and Directory (tenant) ID from the Overview page.
 
-<!-- SCREENSHOT: new app registration / Overview page (blur IDs) -->
+<img width="1613" height="887" alt="image" src="https://github.com/user-attachments/assets/fe993aca-ee18-4380-b01d-4583f89e51da" />
+
 
 ## 2. Client Secret
 
@@ -33,7 +34,6 @@ Register an application in Microsoft Entra ID, configure a client secret and a M
 2. Created the secret and copied the Value immediately (it is shown only once).
 3. Stored the secret outside the repository and supplied it to the test script through an environment variable.
 
-<!-- SCREENSHOT: Certificates & secrets page (Value hidden) -->
 
 ## 3. Microsoft Graph Application Permission
 
@@ -49,7 +49,9 @@ Register an application in Microsoft Entra ID, configure a client secret and a M
 2. Added `User.Read.All`.
 3. Confirmed the status showed **Not granted for tenant**.
 
-<!-- SCREENSHOT: API permissions page before consent -->
+<img width="1687" height="918" alt="Screenshot 2026-10-03 190738" src="https://github.com/user-attachments/assets/5f663b17-4f9e-47e3-91bd-60863d10793e" />
+<img width="1182" height="347" alt="Screenshot 2026-10-03 190751" src="https://github.com/user-attachments/assets/aa368578-166d-4694-a56e-8aa4812c1a59" />
+
 
 ## 4. Validation
 
@@ -60,7 +62,7 @@ A PowerShell script requested a token using the client credentials flow and call
 - The token request succeeded.
 - The Graph call returned **403 Forbidden**.
 
-<!-- SCREENSHOT: 403 error -->
+<img width="1183" height="163" alt="image" src="https://github.com/user-attachments/assets/3b815f67-61c8-4df1-a581-0b4cbcc1efc6" />
 
 ### Granting admin consent
 
@@ -74,13 +76,13 @@ A PowerShell script requested a token using the client credentials flow and call
 - A fresh token was requested (the earlier token was issued before consent and did not include the permission).
 - The Graph call returned users successfully.
 
-<!-- SCREENSHOT: user list returned -->
+<img width="1082" height="278" alt="Screenshot 2026-10-03 191915" src="https://github.com/user-attachments/assets/c6af9d35-48b5-4de0-9ebb-ef514be7e214" />
 
 ### Audit evidence
 
 - The consent action was verified in **Entra ID → Monitoring → Audit logs**.
 
-<!-- SCREENSHOT: audit log consent event -->
+<img width="905" height="27" alt="image" src="https://github.com/user-attachments/assets/f6d03046-2918-429a-b984-542ec4e70bf6" />
 
 ## 5. App Registration vs. Enterprise Application
 
@@ -88,8 +90,8 @@ A PowerShell script requested a token using the client credentials flow and call
 |---|---|
 | **App registration** | The global definition of the application (identity, secrets, permissions requested) |
 | **Enterprise application** | The service principal, the tenant-local instance where consent, assignment, and sign-in behavior are managed |
+<img width="1427" height="663" alt="image" src="https://github.com/user-attachments/assets/a298c286-6509-4c90-9d74-a0d15df3127d" />
 
-<!-- SCREENSHOT: app registration and the matching enterprise application -->
 
 ## Result
 
