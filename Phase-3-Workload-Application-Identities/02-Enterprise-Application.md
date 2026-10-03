@@ -19,8 +19,9 @@ Create an enterprise application, restrict access with "Assignment required", as
 2. Created `LAB-App-Internal` as a non-gallery application.
 3. Opened **Properties** and set **Assignment required?** to **Yes**.
 
-<!-- SCREENSHOT: enterprise app Overview page -->
-<!-- SCREENSHOT: Properties page showing Assignment required = Yes -->
+<img width="1553" height="912" alt="Screenshot 2026-10-03 192324" src="https://github.com/user-attachments/assets/887c72f5-00ad-4dac-98a9-385ad2c403b4" />
+<img width="1002" height="830" alt="image" src="https://github.com/user-attachments/assets/e6a87f53-ad50-4c3c-a65b-14d04876ffe4" />
+
 
 ## 2. Group Assignment
 
@@ -34,7 +35,7 @@ Create an enterprise application, restrict access with "Assignment required", as
 1. Opened **Users and groups → Add user/group**.
 2. Selected `SG-Engineering-Team` and assigned it to the application.
 
-<!-- SCREENSHOT: Users and groups assignment list -->
+<img width="1600" height="628" alt="Screenshot 2026-10-03 192531" src="https://github.com/user-attachments/assets/e5e4c4c8-4f5a-4bb3-b5e8-0beb000a1255" />
 
 ## 3. SAML Single Sign-On (Configuration Only)
 
@@ -53,7 +54,7 @@ Create an enterprise application, restrict access with "Assignment required", as
 
 No service provider exists behind this application, so this section documents the SSO configuration and was not tested with an end-to-end sign-in.
 
-<!-- SCREENSHOT: SAML Basic Configuration and certificate expiry -->
+<img width="793" height="360" alt="Screenshot 2026-10-03 192742" src="https://github.com/user-attachments/assets/a87a8e16-3ca6-498b-8e38-7bee9a8036be" />
 
 ## 4. Validation
 
@@ -69,7 +70,7 @@ No service provider exists behind this application, so this section documents th
 - Signed in at `myapplications.microsoft.com` using an InPrivate session.
 - The `LAB-App-Internal` tile was visible.
 
-<!-- SCREENSHOT: My Apps showing the tile for Mohamed Dev -->
+<img width="1377" height="551" alt="Screenshot 2026-10-03 194021" src="https://github.com/user-attachments/assets/36719add-ff01-49ea-879e-946b30ccedbd" />
 
 ### Unassigned user (Lisa HR)
 
@@ -77,14 +78,14 @@ No service provider exists behind this application, so this section documents th
 - The application tile was not visible.
 - Opening the application's User access URL returned error **AADSTS50105** (user is not assigned to a role for the application).
 
-<!-- SCREENSHOT: My Apps without the tile for Lisa HR -->
-<!-- SCREENSHOT: AADSTS50105 error -->
+<img width="1653" height="593" alt="Screenshot 2026-10-03 194159" src="https://github.com/user-attachments/assets/1d388c91-7d0e-4046-a716-d0a9381cc061" />
+<img width="691" height="383" alt="image" src="https://github.com/user-attachments/assets/b6ff5b53-3453-4dae-9a57-03e3f48bc232" />
 
 ### Audit evidence
 
 - The blocked sign-in for Lisa HR with error code `50105` was verified in **Entra ID → Monitoring → Sign-in logs**.
 
-<!-- SCREENSHOT: sign-in log entry for the failed sign-in -->
+<img width="1548" height="62" alt="Screenshot 2026-10-03 194645" src="https://github.com/user-attachments/assets/1b752f6a-4e61-4f28-95af-2d7734ec9648" />
 
 ## Result
 
