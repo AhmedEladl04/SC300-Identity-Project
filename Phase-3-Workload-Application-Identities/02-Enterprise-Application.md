@@ -85,7 +85,7 @@ No service provider exists behind this application, so this section documents th
 
 - The blocked sign-in for Lisa HR with error code `50105` was verified in **Entra ID → Monitoring → Sign-in logs**.
 
-<img width="1548" height="62" alt="Screenshot 2026-10-03 194645" src="https://github.com/user-attachments/assets/1b752f6a-4e61-4f28-95af-2d7734ec9648" />
+<img width="1548" height="62" alt="image" src="https://github.com/user-attachments/assets/6db4cdb6-d69b-4922-aaa6-3e14e630c7fe" />
 
 ## Result
 
