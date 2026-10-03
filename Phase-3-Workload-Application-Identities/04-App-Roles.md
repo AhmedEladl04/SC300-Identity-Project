@@ -19,7 +19,7 @@ Define custom app roles on an application, assign them to security groups, and v
 2. Created the `Report Reader` role (`Report.Read`) and enabled it.
 3. Created the `Report Admin` role (`Report.Admin`) and enabled it.
 
-<!-- SCREENSHOT: App roles list showing both roles enabled -->
+<img width="1566" height="678" alt="Screenshot 2026-10-03 203040" src="https://github.com/user-attachments/assets/e89c3bea-f476-4170-ac85-6caf76703634" />
 
 ## 2. Role Assignment
 
@@ -36,7 +36,7 @@ Define custom app roles on an application, assign them to security groups, and v
 2. Assigned `SG-SOC-Team` to the `Report Reader` role.
 3. Assigned `SG-IT-Team` to the `Report Admin` role.
 
-<!-- SCREENSHOT: Users and groups showing group and role -->
+<img width="1613" height="631" alt="Screenshot 2026-10-03 203131" src="https://github.com/user-attachments/assets/6b6642ef-3a70-4ea3-9b60-c00b1667a9c3" />
 
 ## 3. Test Preparation
 
@@ -47,7 +47,7 @@ The app registration was temporarily configured for token inspection:
 
 This was for lab testing only and was removed after validation.
 
-<!-- SCREENSHOT: Authentication page showing redirect URI and ID tokens setting -->
+<img width="1490" height="678" alt="Screenshot 2026-10-03 203303" src="https://github.com/user-attachments/assets/d6aa2c69-d6b3-4c94-855e-3758b6e2454f" />
 
 ## 4. Validation
 
@@ -59,9 +59,8 @@ An authorization request using `response_type=id_token` was opened in separate I
 | David IT | `SG-IT-Team` | `Report.Admin` | ✅ |
 | Lisa HR | None | No `roles` claim | ✅ |
 
-<!-- SCREENSHOT: decoded token for John SOC (roles claim, identifiers blurred) -->
-<!-- SCREENSHOT: decoded token for David IT (roles claim, identifiers blurred) -->
-<!-- SCREENSHOT: decoded token for Lisa HR (no roles claim) -->
+<img width="1320" height="797" alt="image" src="https://github.com/user-attachments/assets/84e05479-b2be-4157-9638-72f2865b68f3" />
+
 
 ### Troubleshooting
 
