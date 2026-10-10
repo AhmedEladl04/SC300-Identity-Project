@@ -2,7 +2,7 @@
 
 ## Objective
 
-Configure and govern application identities in Microsoft Entra ID: register applications, control who can access and consent to them, and assign roles within an application.
+Configure and govern application identities in Microsoft Entra ID: register applications, control who can access and consent to them, assign roles within an application, and use managed identities to remove stored secrets.
 
 > `LAB-App-Reporting` and the other applications in this phase are placeholder apps with no code behind them. They exist to demonstrate identity configuration. The roles and permissions model a reporting tool, but nothing is actually built.
 
@@ -14,6 +14,7 @@ Configure and govern application identities in Microsoft Entra ID: register appl
 | 02 | [Enterprise Application and Assignment](02-Enterprise-Application.md) | ✅ Completed |
 | 03 | [Consent Governance](03-Consent-Governance.md) | ✅ Completed |
 | 04 | [App Roles](04-App-Roles.md) | ✅ Completed |
+| 05 | [Managed Identity](05-Managed-Identity.md) | ✅ Completed |
 
 ---
 
@@ -101,13 +102,33 @@ Validated by decoding sign-in tokens:
 
 ---
 
+## 05 - Managed Identity
+
+Implemented:
+
+- Azure Logic App (`LAB-LogicApp-MI`) with a **system-assigned managed identity**
+- Microsoft Graph application permission (`User.Read.All`) assigned to the identity with PowerShell
+- HTTP action calling Microsoft Graph with managed identity authentication
+
+Validated:
+
+- The workflow returned users from Microsoft Graph with **no client secret or certificate** stored anywhere
+- The identity and its permission were visible in Entra under Enterprise applications (Managed Identities)
+
+Compared with Lab 1: the same permission and API, but nothing to store, rotate, or leak.
+
+### Result
+
+✅ Azure resource called Microsoft Graph using a managed identity.
+
+---
+
 ## Not Implemented in This Lab
 
 These topics belong to the workload identity domain but were not built in this lab:
 
 | Topic | What it is | Why it wasn't implemented |
 |---|---|---|
-| **Managed identities** | Identities for Azure resources that remove the need to store secrets | Requires an Azure subscription and a resource to attach to |
 | **Microsoft Entra Application Proxy** | Publishes on-premises web apps through a connector | Requires an on-premises connector server |
 | **Conditional Access for workload identities** | Applies location and risk conditions to service principals | Requires Workload Identities Premium licensing |
 
@@ -121,6 +142,7 @@ These topics belong to the workload identity domain but were not built in this l
 - **Consent controls:** blocking user consent, the admin consent workflow, and protection against illicit consent grants
 - **App roles vs. Entra roles:** app roles control access inside one app, Entra roles control the directory
 - **Least privilege:** the Application Developer role instead of a broader administrative role
+- **Managed identities vs. client secrets:** an Azure-managed identity removes the stored credential entirely
 
 ## Phase 3 Skills Practiced
 
@@ -135,6 +157,8 @@ These topics belong to the workload identity domain but were not built in this l
 - Admin consent workflow
 - App roles
 - Token inspection
+- Managed identities
+- Microsoft Graph PowerShell
 - Sign-in and audit log review
 
 ## Phase 3 Completion
