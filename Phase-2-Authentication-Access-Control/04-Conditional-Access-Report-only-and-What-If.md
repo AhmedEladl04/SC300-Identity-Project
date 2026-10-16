@@ -1,5 +1,4 @@
-# 04 -Conditional Access Report only and What-if
-
+# 04 - Conditional Access Report-only and What If
 ## Objective
 Test and validate Conditional Access policies using Report-only mode, actual sign-ins, sign-in logs, and What If.
 
