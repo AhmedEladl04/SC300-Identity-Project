@@ -24,7 +24,6 @@ Hands-on Microsoft Entra ID P2 lab covering the design, administration, and gove
 | 04 — Users, Groups & Administrative Units | User, group, and AU management |
 | 05 — Dynamic Identity | Dynamic groups and custom security attributes |
 | 06 — Identity Access | Licensing, device identities, guests, and cross-tenant access |
-| Company Branding | Tenant branding configuration |
 
 Validation was intentionally skipped for this phase.
 
@@ -46,9 +45,8 @@ Validation was intentionally skipped for this phase.
 
 ## Evidence
 
-Screenshots and configuration evidence are maintained alongside the relevant section documentation, covering tenant settings, roles, identity objects, group and AU configuration, dynamic identity features, identity access, and company branding.
+Screenshots and configuration evidence are maintained alongside the relevant section documentation, covering tenant settings, roles, identity objects, group and AU configuration, dynamic identity features, and identity access.
 
 ## Outcome
 
 Phase 1 establishes a documented Microsoft Entra identity foundation for later authentication, Conditional Access, and identity protection work in the SC-300 lab.
-
