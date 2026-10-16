@@ -9,7 +9,7 @@ Use Microsoft Entra access reviews to recertify access: a guest user in a group,
 - Created the security group `SG-External-Auditors` and added the guest user **External Auditor** as a member.
 - Confirmed `SG-SOC-Team` contains John SOC, Sarah SOC, and Omar SOC.
 
-<!-- SCREENSHOT: SG-External-Auditors members (guest email blurred) -->
+<img width="1625" height="818" alt="Screenshot 2026-10-16 165416" src="https://github.com/user-attachments/assets/6f6cba86-a4fd-49b1-ba0d-715fee822568" />
 
 ## 2. Guest Review
 
@@ -26,7 +26,7 @@ Use Microsoft Entra access reviews to recertify access: a guest user in a group,
 | Require reason | Enabled |
 | Action on denied guests | Remove user's membership from the resource |
 
-<!-- SCREENSHOT: review settings summary -->
+<img width="1576" height="616" alt="Screenshot 2026-10-16 175643" src="https://github.com/user-attachments/assets/64272b27-5960-4683-a391-d5137dd0f175" />
 
 ### Validation
 
@@ -35,9 +35,11 @@ Use Microsoft Entra access reviews to recertify access: a guest user in a group,
 3. Stopped the review and checked **Results**. The decision was applied.
 4. Confirmed that External Auditor was removed from `SG-External-Auditors`, while the guest account still exists under **Users**.
 
-<!-- SCREENSHOT: Deny decision -->
-<!-- SCREENSHOT: results page -->
-<!-- SCREENSHOT: empty group and guest account still present -->
+<img width="1517" height="445" alt="Screenshot 2026-10-16 180100" src="https://github.com/user-attachments/assets/40e3d113-3904-47d9-879e-027c3261947e" />
+<img width="1535" height="472" alt="Screenshot 2026-10-16 180155" src="https://github.com/user-attachments/assets/ccbd709b-7cd6-4fb6-9133-5030654bdd63" />
+<img width="1160" height="331" alt="Screenshot 2026-10-16 180740" src="https://github.com/user-attachments/assets/dbdcd2ad-a480-4fb2-8453-b3ed39633c69" />
+<img width="1521" height="657" alt="Screenshot 2026-10-16 181041" src="https://github.com/user-attachments/assets/ff764450-0bce-482d-8c4b-1a627915b877" />
+
 
 ## 3. Role Review (Privileged Identity Management)
 
@@ -56,7 +58,7 @@ Use Microsoft Entra access reviews to recertify access: a guest user in a group,
 
 Entra role reviews are created and completed in PIM, not in the main Access reviews page.
 
-<!-- SCREENSHOT: role review settings -->
+<img width="1600" height="798" alt="Screenshot 2026-10-16 172331" src="https://github.com/user-attachments/assets/4331ec2b-bf7b-47e2-826f-faecb64f6eac" />
 
 ### Validation
 
@@ -65,8 +67,8 @@ Entra role reviews are created and completed in PIM, not in the main Access revi
 3. Stopped the review. With auto apply enabled, the results were applied automatically.
 4. Confirmed that Mohamed's eligible assignment was unchanged. Approving a user keeps their access.
 
-<!-- SCREENSHOT: Approve decision -->
-<!-- SCREENSHOT: results and unchanged eligible assignment -->
+<img width="1882" height="756" alt="Screenshot 2026-10-16 180929" src="https://github.com/user-attachments/assets/8661b68b-49de-4cfd-bee5-0ab695d907cf" />
+<img width="1581" height="605" alt="Screenshot 2026-10-16 181033" src="https://github.com/user-attachments/assets/f5fa869c-3937-498b-9b8e-2ca58f835067" />
 
 ## 4. Internal Group Self-Review
 
@@ -81,7 +83,7 @@ Entra role reviews are created and completed in PIM, not in the main Access revi
 | Auto apply results | Enabled |
 | If reviewers don't respond | No change |
 
-<!-- SCREENSHOT: review settings -->
+<img width="942" height="467" alt="image" src="https://github.com/user-attachments/assets/50de1001-e640-4151-978b-061d3a42e0c3" />
 
 ### Validation
 
@@ -93,15 +95,17 @@ Entra role reviews are created and completed in PIM, not in the main Access revi
 
 After verification, Sarah SOC was added back to `SG-SOC-Team` to match the documented lab design.
 
-<!-- SCREENSHOT: John's approval -->
-<!-- SCREENSHOT: Sarah's denial -->
-<!-- SCREENSHOT: results page showing three outcomes -->
+<img width="1615" height="561" alt="Screenshot 2026-10-16 173516" src="https://github.com/user-attachments/assets/91d404b5-5cfd-464f-b9b3-7b2744896e96" />
+<img width="1597" height="692" alt="Screenshot 2026-10-16 173652" src="https://github.com/user-attachments/assets/4e5da5ff-9583-474c-a046-dbb2dd6e8f95" />
+<img width="901" height="538" alt="Screenshot 2026-10-16 173712" src="https://github.com/user-attachments/assets/d009bde3-0b8c-4de1-861f-f439bf243848" />
+<img width="1628" height="717" alt="Screenshot 2026-10-16 175635" src="https://github.com/user-attachments/assets/94645fd9-47e7-4745-a4c9-55ee35cc11eb" />
+
 
 ## 5. Audit Evidence
 
 - Reviewed **Entra ID → Monitoring → Audit logs** and confirmed entries for creating the reviews, recording decisions, and removing members from groups.
 
-<!-- SCREENSHOT: audit log entries -->
+<img width="1617" height="421" alt="Screenshot 2026-10-16 175824" src="https://github.com/user-attachments/assets/e8b5e357-2c27-4251-adc8-04ba15f3629d" />
 
 ## Troubleshooting
 
