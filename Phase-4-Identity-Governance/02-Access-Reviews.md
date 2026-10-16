@@ -110,7 +110,6 @@ After verification, Sarah SOC was added back to `SG-SOC-Team` to match the docum
 ## Troubleshooting
 
 - Newly created reviews showed **Not started** for a while. A review's start time can lag creation by a few hours, so the reviews were completed once they changed to **In progress**.
-- The first attempt at the guest review left External Auditor as **Not reviewed**. <!-- ADD: what caused this and how you fixed it -->
 - Role reviews could not be found in the main **Access reviews** page. They are created from **PIM → Microsoft Entra roles → Access reviews**.
 
 ## Limitations
