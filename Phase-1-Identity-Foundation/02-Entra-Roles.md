@@ -71,8 +71,6 @@ Alice reset a standard user's password successfully.
 
 Alice tried to assign herself the Global Administrator role. The attempt failed, because User Administrator cannot grant roles.
 
-<!-- SCREENSHOT: Alice's denied attempt to assign Global Administrator -->
-
 ## Result
 
 ✅ A limited role was assigned and verified: Alice can manage users but cannot escalate her own privileges.
