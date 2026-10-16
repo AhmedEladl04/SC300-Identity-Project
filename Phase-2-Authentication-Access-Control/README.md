@@ -8,12 +8,13 @@ Configure and test Microsoft Entra authentication, MFA, password management, Con
 
 | # | Topic | Status |
 |---|---|---|
-| 01 | Authentication Methods | ✅ Completed |
-| 02 | MFA, Authentication Strength & Conditional Access | ✅ Completed |
-| 03 | SSPR & Password Protection | ✅ Completed |
-| 04 | Conditional Access Report-only & What If | ✅ Completed |
-| 05 | Identity Protection | ✅ Completed |
-| 06 | Risk-Based Access | ✅ Completed |
+| 01 | [Authentication Methods](01-Authentication-Methods.md) | ✅ Completed |
+| 02 | [MFA, Authentication Strength & Conditional Access](02-MFA-Authentication-Strength-and-Conditional-Access.md) | ✅ Completed |
+| 03 | [SSPR & Password Protection](03-SSPR-and-Password-Protection.md) | ✅ Completed |
+| 04 | [Conditional Access Report-only & What If](04-Conditional-Access-Report-only-and-What-If.md) | ✅ Completed |
+| 05 | [Identity Protection and Risk-Based Access](05-Identity-Protection.md) | ✅ Completed |
+
+---
 
 ## 01 - Authentication Methods
 
@@ -76,7 +77,7 @@ A What If simulation using **High sign-in risk** was used to validate the risk-b
 ### Result
 ✅ Conditional Access testing completed.
 
-## 05 - Identity Protection
+## 05 - Identity Protection and Risk-Based Access
 
 Reviewed:
 
@@ -96,16 +97,7 @@ Reviewed:
 
 No actual risky activity was detected during the lab.
 
-### Result
-✅ Identity Protection reviewed and integrated with the Conditional Access lab.
-
-## 06 - Risk-Based Access
-
-Created:
-
-`LAB - Require MFA for Sign-in Risk`
-
-Configuration:
+Created a risk-based Conditional Access policy, `LAB - Require MFA for Sign-in Risk`:
 
 - **Users:** Lab user
 - **Target resources:** All cloud apps
@@ -113,10 +105,10 @@ Configuration:
 - **Grant:** Require multifactor authentication
 - **State:** Report-only
 
-The policy was validated using the **What If** tool with **High sign-in risk** and appeared under **Policies that will apply**.
+The policy was validated with the **What If** tool using **High sign-in risk** (see 04) and appeared under **Policies that will apply**. It was not triggered by a real risky sign-in.
 
 ### Result
-✅ Risk-based Conditional Access successfully configured and validated.
+✅ Identity Protection reviewed, and a risk-based Conditional Access policy configured and validated with What If.
 
 ## Phase 2 Skills Practiced
 
@@ -134,7 +126,7 @@ The policy was validated using the **What If** tool with **High sign-in risk** a
 - Identity Protection
 - User risk
 - Sign-in risk
-- Risk-based Conditional Access
+- Risk-based Conditional Access (validated with What If)
 
 ## Phase 2 Completion
 
