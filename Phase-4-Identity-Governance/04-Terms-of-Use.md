@@ -24,7 +24,7 @@ Require users to accept a terms-of-use document before accessing resources, enfo
 2. Opened **ID Governance → Terms of use → New terms**.
 3. Uploaded the PDF and configured the settings above.
 
-<!-- SCREENSHOT: terms of use settings -->
+<img width="1578" height="412" alt="Screenshot 2026-10-16 191753" src="https://github.com/user-attachments/assets/55f85ef8-4e5f-4a13-831e-0f87316a1a9a" />
 
 ## 2. Conditional Access Policy
 
@@ -40,7 +40,7 @@ Require users to accept a terms-of-use document before accessing resources, enfo
 
 The policy targets a single test user so the administrator account is not affected.
 
-<!-- SCREENSHOT: Conditional Access policy summary -->
+<img width="1558" height="748" alt="Screenshot 2026-10-16 191819" src="https://github.com/user-attachments/assets/9a2701b6-a771-4044-afb4-a706555f1085" />
 
 ## 3. Validation
 
@@ -49,7 +49,9 @@ The policy targets a single test user so the administrator account is not affect
 - Signed in as Lisa HR. The terms were not shown, because the policy was not enforced.
 - The sign-in log (**Report-only** tab) showed `LAB - Require Terms of Use` being evaluated.
 
-<!-- SCREENSHOT: report-only result in the sign-in log -->
+<img width="1596" height="455" alt="Screenshot 2026-10-16 192611" src="https://github.com/user-attachments/assets/7fa5d55f-2e00-44d2-9f05-35b92a2fdf69" />
+
+
 
 ### Enforced
 
@@ -58,8 +60,9 @@ The policy targets a single test user so the administrator account is not affect
 3. The terms of use screen appeared before access was granted. Opened the document and selected **Accept**.
 4. Lisa HR then reached `myapplications.microsoft.com`.
 
-<!-- SCREENSHOT: terms of use prompt -->
-<!-- SCREENSHOT: successful sign-in after acceptance -->
+<img width="1577" height="875" alt="image" src="https://github.com/user-attachments/assets/f7e4d9e6-56c6-4320-b1a7-4c54ad238e60" />
+<img width="1805" height="695" alt="Screenshot 2026-10-16 190220" src="https://github.com/user-attachments/assets/a40dcde7-fc12-4040-ad2d-32265bdc202c" />
+
 
 ### Acceptance record
 
@@ -67,14 +70,11 @@ The policy targets a single test user so the administrator account is not affect
 - The sign-in log (**Conditional Access** tab) showed the policy applied and satisfied.
 - A second sign-in did not ask for the terms again, because the consent is stored.
 
-<!-- SCREENSHOT: acceptance report -->
-<!-- SCREENSHOT: sign-in log Conditional Access tab -->
 
-### Cleanup
+<img width="1280" height="60" alt="Screenshot 2026-10-16 192523" src="https://github.com/user-attachments/assets/9c66f175-58d2-45d5-b9f9-a0a0109e2505" />
 
-- Set `LAB - Require Terms of Use` back to **Off** so later labs are not affected.
 
-<!-- SCREENSHOT: policy state after cleanup -->
+
 
 ## Result
 
