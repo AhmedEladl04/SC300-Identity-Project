@@ -68,7 +68,7 @@ The command returned the new assignment for `LAB-LogicApp-MI`.
 - The HTTP action returned **200** with the requested users.
 
 <img width="1582" height="485" alt="Screenshot 2026-10-10 145909" src="https://github.com/user-attachments/assets/75f419e8-810f-449f-8f77-67cbfff70533" />
-<img width="1433" height="743" alt="Screenshot 2026-10-10 145942" src="https://github.com/user-attachments/assets/0ee06ba3-b365-43a6-af92-2a3196ed1bf0" />
+<img width="822" height="457" alt="image" src="https://github.com/user-attachments/assets/94503142-148b-482a-b14f-4caffcf30fad" />
 <img width="1382" height="50" alt="Screenshot 2026-10-10 145951" src="https://github.com/user-attachments/assets/8e1a7aa0-91fc-4f3d-89ad-5881f0e830cc" />
 
 
