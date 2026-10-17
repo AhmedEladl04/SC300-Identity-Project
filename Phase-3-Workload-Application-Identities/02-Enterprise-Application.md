@@ -54,7 +54,8 @@ Create an enterprise application, restrict access with "Assignment required", as
 
 No service provider exists behind this application, so this section documents the SSO configuration and was not tested with an end-to-end sign-in.
 
-<img width="793" height="360" alt="Screenshot 2026-10-03 192742" src="https://github.com/user-attachments/assets/a87a8e16-3ca6-498b-8e38-7bee9a8036be" />
+<img width="808" height="368" alt="image" src="https://github.com/user-attachments/assets/8bc85ba4-bae8-4ad5-b119-bfc4b522b0b8" />
+
 
 ## 4. Validation
 
