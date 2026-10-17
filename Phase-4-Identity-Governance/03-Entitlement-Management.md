@@ -38,7 +38,7 @@ Use Microsoft Entra entitlement management to give a user time-limited access th
 
 The access package grants membership in `SG-Engineering-Team`, the group assigned to the `LAB-App-Internal` enterprise application in Phase 3, Lab 2.
 
-<img width="817" height="442" alt="image" src="https://github.com/user-attachments/assets/5234923c-7c8d-4457-8645-9509f2ad9670" />
+<img width="817" height="442" alt="image" src="https://github.com/user-attachments/assets/d46a9559-4a6d-4cc0-89b4-57ea57d7cd0c" />
 
 
 ## 3. Validation
