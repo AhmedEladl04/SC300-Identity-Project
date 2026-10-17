@@ -76,7 +76,8 @@ A PowerShell script requested a token using the client credentials flow and call
 - A fresh token was requested (the earlier token was issued before consent and did not include the permission).
 - The Graph call returned users successfully.
 
-<img width="1082" height="278" alt="Screenshot 2026-10-03 191915" src="https://github.com/user-attachments/assets/c6af9d35-48b5-4de0-9ebb-ef514be7e214" />
+<img width="818" height="200" alt="image" src="https://github.com/user-attachments/assets/d6374745-b65e-4135-975a-8a2067dd4f02" />
+
 
 ### Audit evidence
 
