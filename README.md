@@ -1,5 +1,5 @@
 # SC-300 Identity Project
-<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/6623b1ad-5a18-4229-b6fe-86973cb3bedd" />
+<img width="1002" height="481" alt="image" src="https://github.com/user-attachments/assets/a104e7a1-2a2a-49ba-b27c-b9bada8163ec" />
 
 
 A hands-on Microsoft Entra ID lab built while preparing for the **SC-300: Microsoft Identity and Access Administrator** exam. Every topic was configured in a real Entra ID P2 tenant, tested, and documented with screenshots.
