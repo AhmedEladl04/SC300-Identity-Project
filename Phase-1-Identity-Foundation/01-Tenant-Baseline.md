@@ -4,8 +4,8 @@
 
 | Property                    | Value                        |
 | --------------------------- | ---------------------------- |
-| **Tenant Name**             | `eladlsecurityaudit`         |
-| **Primary Domain**          | `eladlaudit.onmicrosoft.com` |
+| **Tenant Name**             | `<lab-tenant>` (redacted)    |
+| **Primary Domain**          | `<lab-domain>.onmicrosoft.com` (redacted) |
 | **Microsoft Entra License** | Microsoft Entra ID P2        |
 | **Users**                   | 1                            |
 | **Groups**                  | 0                            |
@@ -14,7 +14,7 @@
 
 ### Initial Tenant State
 
-The `eladlsecurityaudit` Microsoft Entra tenant is currently in an almost clean state, containing only the initial administrator account.
+The lab Microsoft Entra tenant is currently in an almost clean state, containing only the initial administrator account.
 
 At the beginning of the project, the tenant has:
 
@@ -122,5 +122,3 @@ The initial tenant assessment identified the following conditions:
 This baseline will be used to measure the changes introduced throughout the SC-300 practical project.
 
 ---
-
-
