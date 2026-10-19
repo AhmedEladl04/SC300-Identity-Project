@@ -25,8 +25,6 @@ Hands-on Microsoft Entra ID P2 lab covering the design, administration, and gove
 | 05 — Dynamic Identity | Dynamic groups and custom security attributes |
 | 06 — Identity Access | Licensing, device identities, guests, and cross-tenant access |
 
-Validation was intentionally skipped for this phase.
-
 ## Lab Identities and Structure
 
 - **Internal identities:** 10 lab users supporting workforce and administrative scenarios.
